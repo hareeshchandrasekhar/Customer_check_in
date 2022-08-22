@@ -52,7 +52,8 @@ st.write('** Totalrevenue**')
   
   
   # Load the Dataset
-df_customer = pd.read_csv(r"https://github.com/hareeshchandrasekhar/Customer_check_in/blob/main/file1.csv")
+url='https://github.com/hareeshchandrasekhar/Customer_check_in/blob/main/file1.csv'
+df_customer = pd.read_csv(url)
 X =df_customer.drop('BookingsCheckedIn',axis=1)
 Y = df_customer[['BookingsCheckedIn']]
 
